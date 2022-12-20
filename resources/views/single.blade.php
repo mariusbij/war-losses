@@ -45,18 +45,18 @@
     </div>
 </nav>
 <div class="px-4 py-4">
-    <div class="bg-white rounded shadow w-4/12 text-l">
-        <div class="px-4 pt-4">Country:
+    <div class="text-l">
+        <div class="px-2 pt-4">Country:
             @if($equipment->side_country == 10)
                 <span class="fi fi-ua"></span> <b>Ukraine</b>
             @endif
             @if($equipment->side_country == 20)
-                <span class="fi fi-ua"></span> <b>Russia</b>
+                <span class="fi fi-ru"></span> <b>Russia</b>
             @endif
         </div>
-        <div class="px-4 py-1">Name: <b>{{ $equipment->name }}</b></div>
-        <div class="px-4 py-1">Category: <b>{{ $equipment->category->name }}</b></div>
-        <div class="px-4 pb-4">Tags: @foreach($equipment->tags as $tag)
+        <div class="px-2 py-1">Name: <b>{{ $equipment->name }}</b></div>
+        <div class="px-2 py-1">Category: <b>{{ $equipment->category->name }}</b></div>
+        <div class="px-2 pb-4">Tags: @foreach($equipment->tags as $tag)
                 <b>{{ ucfirst($tag->name) }}</b>
             @endforeach
         </div>
